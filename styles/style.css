@@ -1,0 +1,135 @@
+html {
+    font-size: 15px; /* px means "pixels": the base font size is now 10 pixels high  */
+    font-family: 'Gowun Batang', serif; /* this should be the rest of the output you got from Google fonts */
+    background-color: #C8DEDE;
+    /* overflow: hidden; */
+  }
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 60px;
+    text-align:'center';
+  }
+
+
+p,li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+
+body{
+    width: 600 px;
+    margin: 0 auto;
+    background-color: #c0d6d6;
+    padding: 15px; 
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: 
+      "header header"
+      "sidebar main"
+      "sidebar footer";
+grid-gap: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "sidebar"
+        "main"
+        "footer";
+  grid-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    grid-area: header;
+    background-color: #1aac3f;
+    border-radius: 25px;
+    padding: 5px;
+    border: 2px solid black;
+    }
+}
+
+header {
+grid-area: header;
+background-color: #9ec7c7;
+border-radius: 25px;
+padding: 5px;
+border: 2px solid black;
+}
+
+.header a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* .header-right {
+  vertical-align: bottom;
+}   */
+
+main {
+grid-column: main;
+background-color: #9ec7c7;
+border-radius: 25px;
+border: 2px solid black;
+}
+
+aside {
+grid-row: sidebar;
+background-color: #9ec7c7;
+border-radius: 25px;
+border: 2px solid black;
+}
+
+footer {
+grid-column: footer;
+background-color:#014d52;
+width: 100%;
+left: 0;
+bottom: 0;
+text-align: center;
+color: white;
+padding: 10px;
+border-radius: 25px;
+border: 2px solid black;
+}
+
+#content {
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.nav > ul {
+  list-style: none;
+  text-align: right;
+} 
+
+.nav > ul > li {
+  display: inline-block;
+}
+
+/* footer{
+    position: fixed;
+    background-color:#014d52;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    padding: 10px;
+} */

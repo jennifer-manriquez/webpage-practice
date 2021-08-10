@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Todos Project</title>
+    <link rel="icon" href="/images/postit.ico" type="image/x-icon">
+    <meta name="author" content="Jennifer Manriquez">
+    <meta name="description" content="Project of To Do List to learn about HTML, CSS and JavaScript">
+    <script src="my-js-file.js" defer></script>
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>  
+        <div class="header">
+          <a href="#default" class="logo"><img src="/images/clipboard.png" width=30></a>
+          <nav class="nav">
+            <ul class="navUl">
+              <li> <a class="active" href="#home">Home</a></li>
+              <li> <a href="#contact" >Contact</a> </li>
+              <li> <a href="#about">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <aside>
+        <div>
+          <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+          </ul>
+        </div>
+      </aside>
+      <main>
+        <div id="content"> 
+          <h1>Todo list</h1>
+          <img src="/images/todo-image.jpg" alt="My test image" width=300>
+          <p>This is going to be a list with </p>
+          <ul>
+              <li>item1</li>
+              <li>item2</li>
+              <li>item3</li>
+          </ul>
+          <form action="/action_page.php">
+            <label for="nitem">New Item</label><br>
+            <input type="text" id="fNewItem" name="fNewItem" ><br>
+            <input type="submit" value="Submit">
+          </form>
+          <a href="https://www.wikihow.com/Organize-Your-Time">Some ideas to get organized</a>
+          <p>To finish soon </p>
+        </div>
+      </main>
+      <footer>  
+        @Copyright 2020- All Right Reserved.   
+      </footer>
+    </div>
+  <script src="scripts/main.js"></script>
+  </body>
+</html> 
